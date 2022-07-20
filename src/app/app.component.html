@@ -1,4 +1,4 @@
-<mat-toolbar>
+<!--<mat-toolbar>
   <mat-toolbar-row>
     <button mat-button (click)="opened=!opened">
       <mat-icon>menu</mat-icon>
@@ -203,5 +203,305 @@
     </body>
 
 
+  </mat-sidenav-content>
+</mat-sidenav-container>-->
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened">
+    <div class="profile">
+      <img src="assets/dp.png">
+      <h3 style="font-family: poppins;">Hello, Surya</h3>
+      <button (click)="opened=!opened"
+        style="left: 377px; background-color:white; border: white; position: absolute; top: 28px; font-size: 30px; height: 22px; width: 22px;">
+        <i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <hr style="position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 57px;
+    
+    border: 1px solid #AEAEAE;">
+
+    <mat-nav-list style="padding-top: 80px; padding-left:10px; ">
+      <mat-list-item style="height:32px ; ">
+        <img src="assets/note.png" style="
+        width: 20px;
+        height: 20px;
+        left: 45px;
+        top: 108px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins;">Customize View</span>
+        <i class="fa-solid fa-arrow-right" style="padding-left: 52%;"></i>
+      </mat-list-item>
+
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/filter.png" style="width: 24px;
+        height: 24px;
+        left: 45px;
+        top: 108px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Filter Results</span>
+        <i class="fa-solid fa-arrow-right" style="padding-left: 59%;"></i>
+      </mat-list-item>
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/download (1).png" style="left:45px ; height: 20px; width: 20px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Download CSV</span>
+
+      </mat-list-item>
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/keyword.png" style="left: 45px; height: 20px; width: 20px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Keyword Cloud</span>
+
+      </mat-list-item>
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/trend.png" style=" height: 15px; width: 15px; margin: 1%;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Search Trends</span>
+
+      </mat-list-item>
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/screenshot.png" style="height: 20px; width:20px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Download Screenshot</span>
+
+      </mat-list-item>
+      <div class="bottom" style="bottom:0; position: absolute; padding-bottom:25px ;">
+        <hr style="margin-top: 5px; border:1px solid #AEAEAE; width: 100%;">
+        <mat-list-item style="height:32px ;">
+          <img src="assets/help.png" style=" width: 22px; height: 22px;"> <span
+            style="color:black ; font-size: 15px;">Help</span>
+          <i class="fa-solid fa-arrow-right" style="padding-left:260px"></i>
+        </mat-list-item>
+        <mat-list-item style="height:32px ;">
+          <img src="assets/settings (1).png" style="width: 22px; height: 22px;">
+          <span style="color:black ; font-size: 15px;">Account Settings</span>
+          <i class="fa-solid fa-arrow-right" style="padding-left: 178px;"></i>
+        </mat-list-item>
+        <mat-list-item style="height:32px ;">
+          <img src="assets/logout.png" style="width: 22px; height: 22px;">
+          <span style="color:black ; font-size: 15px;">Log Out</span>
+        </mat-list-item>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <mat-toolbar style="background-color: #003167; width: 100%;">
+      <button (click)=" opened=!opened"
+        style="color: white; background-color: #003167 ; border: #003167; font-family: poppins;"> <i class="fa fa-bars"
+          aria-hidden="true"></i>
+        Menu
+      </button>
+      <img src="assets/icon.png" style="padding-left: 40% ; height:55px;  ">
+      <i class="fa-solid fa-arrow-rotate-right"
+        style="padding-left:43% ; margin:1%; font-size: 25px; color: white;"></i>
+      <i class="fa-solid fa-xmark" style="font-size: 30px; color:white;"></i>
+    </mat-toolbar>
+
+    <div class="home-content">
+      <div class="overview-boxes" style="font-size: poppins;">
+        <div class="box">
+          <div class="left-side">
+            <div class="box_topic">Average Monthly Sales</div>
+            <div class="number">235</div>
+
+          </div>
+        </div>
+        <div class="box">
+          <div class="left-side">
+            <div class="box_topic">Average Sales Rank</div>
+            <div class="number">270,483</div>
+
+          </div>
+
+        </div>
+        <div class="box">
+          <div class="left-side">
+            <div class="box_topic">Average Price</div>
+            <div class="number">6472.45</div>
+
+          </div>
+        </div>
+        <div class="box">
+          <div class="left-side">
+            <div class="box_topic">Average Rating Number</div>
+            <div class="number">38273</div>
+
+          </div>
+        </div>
+        <div class="box">
+          <div class="left-side">
+            <div class="box_topic" style="padding-bottom:0px ;">Opportunity Score</div>
+            <div class="number">
+              <div style="border: 3px solid #003167; border-radius: 50px; display: flex; width: 20%;
+              justify-content: center; padding: 10px; font-size: 24px; ">
+                5
+              </div>
+              <h2 style="padding-left: 10px;font-weight: 20px;">High Demand</h2><br>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <body>
+
+      <table id="customers">
+        <tr>
+          <th style="font-size: 28px; font-weight: 600; color: #0076ff; padding-left:25px ; ">#<i class="fa fa-caret-up"
+              aria-hidden="true " style="font-size: 25px;position: absolute;
+              width: 17px;
+              height: 17px;
+              left: 53px;
+              top: 30px; "></i></th>
+          <th>Actions</th>
+          <th>Product Name <img src="assets/Group 3.png" style="float: right;"></th>
+          <th>Brand <img src="assets/Group 3.png" style="float:right ;"></th>
+          <th>Price <img src="assets/Group 3.png" style="float: right ;"></th>
+          <th>Mo. Sales <img src="assets/Group 3.png" style="float: right;"></th>
+          <th>D. Sales <img src="assets/Group 3.png" style="float: right;"></th>
+          <th>MO. Revenue <img src="assets/Group 3.png" style="float: right;
+            "></th>
+          <th>Date First Available <img src="assets/Group 3.png" style="float: right ;"></th>
+          <th>Net</th>
+        </tr>
+        <tr>
+          <td style="padding-left: 50px ;" data-label="#">1</td>
+          <td data-label="Actions"><img src="assets/add (2).png">
+            <img src="assets/key (2).png">
+            <img src="assets/tag (2).png">
+          </td>
+          <td data-label="Product Name"><img src="assets/mobile.jpg" style="height:40px ; width:30px; ;">
+            POCO Android
+          </td>
+          <td data-label="Brand">Camoro</td>
+          <td data-label="Price">$14.00</td>
+          <td data-label="Mo.Sales">134</td>
+          <td data-label="D. Sales">134</td>
+          <td data-label="Mo. Revenue">134</td>
+          <td data-label="Date First Available">21-06-2022</td>
+          <td data-label="Net">$90</td>
+        </tr>
+        <tr style="font-family:poppins ; ">
+          <td style=" padding-left:50px ;" data-label="#">2</td>
+          <td data-label="Actions"><img src="assets/add (2).png">
+            <img src="assets/key (2).png">
+            <img src="assets/tag (2).png">
+          </td>
+          <td data-label="Product Name"><img src="assets/mobile.jpg" style="height:40px ; width:30px; ;">
+            POCO Android
+          </td>
+          <td data-label="Brand">Camoro</td>
+          <td data-label="Price">$14.00</td>
+          <td data-label="Mo. Sales">134</td>
+          <td data-label="D. Sales">134</td>
+          <td data-label="Mo. Revenue">134</td>
+          <td data-label="Date First Available">21-06-2022</td>
+          <td data-label="Net">$90</td>
+        </tr>
+        <tr style="font-family:poppins ;">
+          <td style="padding-left: 50px;" data-label="#">3</td>
+          <td data-label="Actions"><img src="assets/add (2).png">
+            <img src="assets/key (2).png">
+            <img src="assets/tag (2).png">
+          </td>
+          <td data-label="Product Name"><img src="assets/mobile.jpg" style="height:40px ; width:30px; ">
+            POCO Android
+          </td>
+          <td data-label="Brand">Camoro</td>
+          <td data-label="Price">$14.00</td>
+          <td data-label="Mo. Sales">134</td>
+          <td data-label="D. Sales">134</td>
+          <td data-label="Mo. Revenue">134</td>
+          <td data-label="Date First Available">21-06-2022</td>
+          <td data-label="Net">$90</td>
+        </tr>
+        <tr style="font-family:poppins ;">
+          <td style="padding-left: 50px;" data-label="#">4</td>
+          <td data-label="Actions"><img src="assets/add (2).png">
+            <img src="assets/key (2).png">
+            <img src="assets/tag (2).png">
+          </td>
+          <td data-label="Product Name"><img src="assets/mobile.jpg" style="height:40px ; width:30px; ;">
+            POCO Android
+          </td>
+          <td data-label="Brand">Camoro</td>
+          <td data-label="Price">$14.00</td>
+          <td data-label="Mo. Sales">134</td>
+          <td data-label="D. Sales">134</td>
+          <td data-label="Mo. Revenue">134</td>
+          <td data-label="Date First Available">21-06-2022</td>
+          <td data-label="Net">$90</td>
+        </tr>
+        <tr style="font-family:poppins ;">
+          <td style="padding-left: 50px ; " data-label="#">5</td>
+          <td data-label="Actions"><img src="assets/add (2).png">
+            <img src="assets/key (2).png">
+            <img src="assets/tag (2).png">
+          </td>
+          <td data-label="Product Name"><img src="assets/mobile.jpg" style="height:40px ; width:30px; ;">
+            POCO Android
+          </td>
+          <td data-label="Brand">Camoro</td>
+          <td data-label="Price">$14.00</td>
+          <td data-label="Mo. Sales">134</td>
+          <td data-label="D. Sales">134</td>
+          <td data-label="Mo. Revenue">134</td>
+          <td data-label="Date First Available">21-06-2022</td>
+          <td data-label="Net">$90</td>
+        </tr>
+        <tr style="font-family:poppins ;">
+          <td style="padding-left: 50px ; " data-label="#">6</td>
+          <td data-label="Actions"><img src="assets/add (2).png">
+            <img src="assets/key (2).png">
+            <img src="assets/tag (2).png">
+          </td>
+          <td data-label="Product Name"><img src="assets/mobile.jpg" style="height:40px ; width:30px; ;">
+            POCO Android
+          </td>
+          <td data-label="Brand">Camoro</td>
+          <td data-label="Price">$14.00</td>
+          <td data-label="Mo. Sales">134</td>
+          <td data-label="D. Sales">134</td>
+          <td data-label="Mo. Revenue">134</td>
+          <td data-label="Date First Available">21-06-2022</td>
+          <td data-label="Net">$90</td>
+        </tr>
+        <tr style="font-family:poppins ;">
+          <td style="padding-left: 50px ; " data-label="#">7</td>
+          <td data-label="Actions"><img src="assets/add (2).png">
+            <img src="assets/key (2).png">
+            <img src="assets/tag (2).png">
+          </td>
+          <td data-label="Product Name"><img src="assets/mobile.jpg" style="height:40px ; width:30px; ;">
+            POCO Android
+          </td>
+          <td data-label="Brand">Camoro</td>
+          <td data-label="Price">$14.00</td>
+          <td data-label="Mo. Sales">134</td>
+          <td data-label="D. Sales">134</td>
+          <td data-label="Mo. Revenue">134</td>
+          <td data-label="Date First Available">21-06-2022</td>
+          <td data-label="Net">$90</td>
+        </tr>
+
+
+      </table>
+
+
+
+
+
+
+    </body>
+    <!--<div class="load" style="padding-left: 38%; display: flex;">
+      <h1 style="font-size: 16px; ">Showing Result 1-40</h1>
+      <a href="" class="hero-btn red-btn">Load More</a>
+    </div>-->
   </mat-sidenav-content>
 </mat-sidenav-container>
